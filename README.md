@@ -1,2 +1,2 @@
-# luc457x.github.io
+# lucas7x.win
 Lucas7x Website
