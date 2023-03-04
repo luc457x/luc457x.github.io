@@ -3,4 +3,6 @@
     src: url(./../fonts/VCR_OSD_MONO.ttf) format('truetype');
   }
 
-.main{font-size: 44px; color: #0fdf3cc9; font-family: vcr; background-color:#3a006b;}
+.main{position: relative; font-size: 44px; color: #0fdf3cc9; font-family: vcr; background-color:#3a006b;}
+.empty_spaceline{padding: 10px;}
+.placeholder{padding: 50px;}
