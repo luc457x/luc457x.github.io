@@ -5,6 +5,8 @@
 body{
   background-color:black; text-align:center;
 }
+#top{position:fixed; top:1%; right:10%; left:10%;
+}
 .main{position: relative; font-size: 44px; color: #0fdf3cc9; font-family: vcr; background-color:#3a006b;}
-.empty_spaceline{padding: 10px;}
+.empty_spaceline{padding: 30px;}
 .placeholder{padding: 40px;}
