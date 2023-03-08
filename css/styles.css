@@ -6,10 +6,10 @@ body{
   background-color: black; text-align: center;
 }
 #top{
-  position: static; top:1%; right:10%; left:10%;
+  position: sticky; top:1.5%; height: 100%;
 }
 .main{
-  position: relative; font-size: 100%; color: #0fdf3cc9; 
+  font-size: 100%; color: #0fdf3cc9; 
   font-family: vcr; background-color: #3a006b;
 }
 .empty_spaceline{
@@ -17,4 +17,7 @@ body{
   }
 .placeholder{
   padding: 1%;
+}
+.buttons{
+  width: 80%; font-size: 200%; margin: 0 auto;
 }
