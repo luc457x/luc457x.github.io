@@ -12,6 +12,9 @@ body{
 div{
   background-color: #3a006b;
 }
+a{
+  text-decoration:none; color: #0fdf3cc9;
+}
 /* Classes */
 .main{
   font-size: 100%; color: #0fdf3cc9;
