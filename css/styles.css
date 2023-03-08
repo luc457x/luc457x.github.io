@@ -6,13 +6,18 @@
 /* Elements */
 body{
   background-color: black; text-align: center;
+  font-size: 100%; color: #0fdf3cc9;
+  font-family: vcr;
+}
+div{
+  background-color: #3a006b;
 }
 /* Classes */
 .main{
   font-size: 100%; color: #0fdf3cc9;
   font-family: vcr; background-color: #3a006b;
 }
-.empty_spaceline{
+.spaceline{
   padding: 1%;
   }
 .placeholder{
@@ -21,7 +26,14 @@ body{
 .buttons{
   width: 80%; font-size: 200%; margin: 0 auto;
 }
+.top{
+  position: sticky;
+
+}
 /* IDs */
-#top{
-  position: sticky; top:1.5%; height: 100%;
+#head{
+  top:1.5%;
+}
+#foot{
+  bottom:1.5%;
 }
