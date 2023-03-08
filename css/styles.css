@@ -1,15 +1,15 @@
+/* Imports */
 @font-face {
     font-family: 'vcr';
     src: url(./../fonts/VCR_OSD_MONO.ttf) format('truetype');
-  }
+}
+/* Elements */
 body{
   background-color: black; text-align: center;
 }
-#top{
-  position: sticky; top:1.5%; height: 100%;
-}
+/* Classes */
 .main{
-  font-size: 100%; color: #0fdf3cc9; 
+  font-size: 100%; color: #0fdf3cc9;
   font-family: vcr; background-color: #3a006b;
 }
 .empty_spaceline{
@@ -20,4 +20,8 @@ body{
 }
 .buttons{
   width: 80%; font-size: 200%; margin: 0 auto;
+}
+/* IDs */
+#top{
+  position: sticky; top:1.5%; height: 100%;
 }
