@@ -6,7 +6,7 @@ body{
   background-color: black; text-align: center;
 }
 #top{
-  position: fixed; top:1%; right:10%; left:10%;
+  position: static; top:1%; right:10%; left:10%;
 }
 .main{
   position: relative; font-size: 100%; color: #0fdf3cc9; 
