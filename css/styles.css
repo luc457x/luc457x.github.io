@@ -5,11 +5,12 @@
 }
 /* Elements */
 body{
+  margin: 3%;
   background-color: black; text-align: center;
   font-family: vcr; font-size: 150%;
 }
 a{
-  text-decoration:none; color: #00ff37c9;
+  text-decoration:none; color: #00ff37c9; white-space: nowrap;
 }
 h1{
   font-weight:normal; font-size: 150%;
@@ -33,8 +34,8 @@ h2{
 }
 /* IDs */
 #head{
-  position: sticky; top: 0.5%;
+  position: sticky; top: 0; line-height: 1.5;
 }
 #foot{
-  position: sticky; bottom: 0.5%;
+  position: sticky; bottom: 0;
 }
