@@ -7,18 +7,27 @@
 body{
   background-color: black; text-align: center;
   font-size: 100%; color: #0fdf3cc9;
-  font-family: vcr;
-}
-div{
-  background-color: #3a006b;
+  font-family: vcr; padding: 1%;
 }
 a{
-  text-decoration:none; color: #0fdf3cc9;
+  text-decoration:none; color: #0fdf3cc9; font-size: 150%;
+}
+h1{
+  font-weight:normal;
+}
+h2{
+  font-weight:normal;
+}
+p{
+
 }
 /* Classes */
 .main{
   font-size: 100%; color: #0fdf3cc9;
-  font-family: vcr; background-color: #3a006b;
+  font-family: vcr; background-color: #3b006bd0;
+}
+.child{
+  width: 95%; margin: 0 auto; background-color: #3a006b;
 }
 .spaceline{
   padding: 1%;
@@ -26,17 +35,10 @@ a{
 .placeholder{
   padding: 1%;
 }
-.buttons{
-  width: 80%; font-size: 200%; margin: 0 auto;
-}
-.top{
-  position: sticky;
-
-}
 /* IDs */
 #head{
-  top:1.5%;
+  position: sticky; top:1.3%;
 }
 #foot{
-  bottom:1.5%;
+  position: sticky; bottom:1.3%;
 }
