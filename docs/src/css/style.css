@@ -84,6 +84,12 @@ footer a {
 
 @media(max-width: 768px) {
     main div p {
-        font-size: 21px;
+        font-size: 22px;
+    }
+}
+
+@media(max-width: 360px) {
+    header a {
+        padding: 1vh;
     }
 }
