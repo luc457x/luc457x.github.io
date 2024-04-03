@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: lucas7x.win
+Token: e093c9d78330ffc181b82a027658c8d323dc94682a97eb320f6211f704edef51
