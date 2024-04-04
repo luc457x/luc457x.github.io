@@ -59,15 +59,10 @@ main .card:hover .inner {
 
 main .card-front {
     position: absolute;
-    padding: 10%;
     backface-visibility: hidden;
 }
 
 main .card-back {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10%;
     backface-visibility: hidden;
     transform: rotateY(180deg);
 }
