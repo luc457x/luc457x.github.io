@@ -1,7 +1,6 @@
 :root {
     --text-color: hsl(193, 38%, 86%);
-    --advice-dice-color: hsl(150, 100%, 66%);
-    --advice-card-color: hsl(217, 19%, 24%);
+    --card-color: hsl(216, 14%, 14%);
     --background-color: hsl(218, 23%, 16%);
     --text-alt-color: hsl(228, 45%, 44%);
     --text-menu-color:hsl(218, 23%, 16%);
