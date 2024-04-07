@@ -27,13 +27,13 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 50px);
+    height: calc(100dvh - 50px);
 }
 
 main .card {
-    margin: 5vh;
-    width: 45vh;
-    height: 70vh;
+    margin: 5dvh;
+    width: 45dvh;
+    height: 70dvh;
     font-size: 28px;
     text-align: center;
     color: var(--text-color);
@@ -54,7 +54,7 @@ main .card .inner {
 
 main .card:hover .inner {
     transform: rotateY(180deg);
-    
+
 }
 
 main .card-front {
@@ -98,7 +98,7 @@ footer a {
 
 @media(max-width: 360px) {
     header a {
-        padding: 1vh;
+        padding: 1dvh;
     }
 
     main .card {
