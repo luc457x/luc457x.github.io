@@ -1,23 +1,18 @@
-#adviceDiv {
-    font-size: 20px;
-    font-weight: 300;
-}
-
 body {
     background-color: var(--background-color);
     font-family: 'Manrope', sans-serif;
     font-weight: 800;
+    margin: 0;
 }
 
 header {
     background-color: var(--alt-background);
     font-size: 18px;
     text-align: center;
-    height: 30px;
 }
 
 header a {
-    padding: 3.8%;
+    padding: 110px;
     text-decoration: none;
     color: var(--text-menu-color);
 }
@@ -27,7 +22,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: calc(100dvh - 50px);
+    height: calc(100dvh - 43px);
 }
 
 main .card {
@@ -58,37 +53,68 @@ main .card:hover .inner {
 }
 
 main .card-front {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    height: 100%;
     position: absolute;
     backface-visibility: hidden;
-}
-
-main .card-back {
-    backface-visibility: hidden;
-    transform: rotateY(180deg);
 }
 
 main .card-front img {
     width: 70%;
 }
 
+main .card .roles p {
+    margin: 0px;
+}
+
+main .card-back {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
 main .card-front p {
     font-weight: 600;
 }
 
+main .card-back {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 15dvh 2dvw 10dvh 2dvw;
+}
+
 main .card-back img {
-    width: 30%;
+    width: 50%;
 }
 
 footer {
     background-color: var(--alt-background);
     font-size: 12px;
     text-align: center;
-    height: 20px;
 }
 
 footer a {
     color: var(--text-alt-color);
 }
+
+#adviceDiv {
+    padding: 50px 70px 50px 70px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+/* Responsiveness */
 
 @media(max-width: 768px) {
     main div p {
@@ -102,7 +128,7 @@ footer a {
     }
 
     main .card {
-        width: 40vh;
-        height: 60vh;
+        width: 40dvh;
+        height: 60dvh;
     }
 }
