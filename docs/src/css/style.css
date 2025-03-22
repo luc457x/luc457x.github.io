@@ -34,7 +34,7 @@ main .card {
 	font-size: 2.5dvh;
 	text-align: center;
 	color: var(--text-color);
-	perspective: 1000px;
+	perspective: 1500px;
 	transition: all 0.5s ease;
 }
 
@@ -45,7 +45,7 @@ main .card .inner {
 	border-radius: 1vh 6vh;
 	border-style: outset;
 	background-color: var(--card-color);
-	transition: transform 0.8s;
+	transition: transform 1.5s;
 	transform-style: preserve-3d;
 }
 
@@ -61,6 +61,7 @@ main .card-back {
 	justify-content: center;
 	gap: 5dvh;
 	height: 100%;
+    width: 100%;
 	position: absolute;
 	backface-visibility: hidden;
 }
@@ -78,7 +79,7 @@ main .card-front p {
 }
 
 main .card-back {
-	text-align: center;
+    gap: 13dvh;
     backface-visibility: hidden;
 	transform: rotateY(180deg);
 }
@@ -90,7 +91,7 @@ main .card-back img {
 main .card-back .contacts {
 	display: flex;
 	flex-direction: column;
-	gap: 33px;
+	gap: 5dvh;
 }
 
 main .card-back .contacts a,
@@ -103,11 +104,11 @@ main .card-back .contacts a:active {
 main .card-back .contacts .contact-item {
 	display: flex;
 	align-items: center;
-	gap: 10px;
+	gap: 2dvh;
 }
 
 main .card-back .contacts .contact-item img {
-	width: 70px;
+	width: 4dvh;
 }
 
 footer {
@@ -118,36 +119,4 @@ footer {
 
 footer a {
 	color: var(--text-alt-color);
-}
-
-/* Responsiveness */
-
-@media (max-width: 768px) {
-	/* main div p {
-        font-size: 22px;
-    } */
-}
-
-@media (max-width: 360px) {
-	/* header a {
-        padding: 1dvh;
-    }
-
-    main .card {
-        width: 40dvh;
-        height: 70dvh;
-    }
-
-    main .card-front {
-        gap: 10px;        
-    }
-
-    main .card-front h1 {
-        font-weight: 300;
-        font-size: 47px;
-    }
-
-    main .card-front img {
-        width: 50%;
-    } */
 }
