@@ -9,13 +9,13 @@ body {
 
 header {
 	background-color: var(--alt-background);
-	font-size: 2dvh;
+	font-size: 3dvh;
 	font-weight: 600;
 	text-align: center;
 }
 
 header a {
-    padding: 0 6dvw;
+    padding: 0 2dvw;
 	text-decoration: none;
 	color: var(--text-menu-color);
 }
@@ -113,7 +113,7 @@ main .card-back .contacts .contact-item img {
 
 footer {
 	background-color: var(--alt-background);
-	font-size: 1.5dvh;
+	font-size: 2dvh;
 	text-align: center;
 }
 
