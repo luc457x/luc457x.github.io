@@ -1,139 +1,153 @@
 body {
-    background-color: var(--background-color);
-    font-family: 'Manrope', sans-serif;
-    font-weight: 800;
-    margin: 0;
+    display: flex;
+    flex-direction: column;
+	background-color: var(--background-color);
+	font-family: "tomorrow", sans-serif;
+	font-weight: 500;
+    min-height: 100dvh;
 }
 
 header {
-    background-color: var(--alt-background);
-    font-size: 18px;
-    text-align: center;
+	background-color: var(--alt-background);
+	font-size: 2dvh;
+	font-weight: 600;
+	text-align: center;
 }
 
 header a {
-    padding: 110px;
-    text-decoration: none;
-    color: var(--text-menu-color);
+    padding: 0 6dvw;
+	text-decoration: none;
+	color: var(--text-menu-color);
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: calc(100dvh - 43px);
+	display: flex;
+	flex-direction: column;
+    flex: 1;
+	justify-content: center;
+	align-items: center;
 }
 
 main .card {
-    margin: 5dvh;
-    width: 45dvh;
-    height: 70dvh;
-    font-size: 28px;
-    text-align: center;
-    color: var(--text-color);
-    perspective: 1000px;
-    transition: all 0.5s ease;
+	width: 45dvh;
+	height: 70dvh;
+	font-size: 2.5dvh;
+	text-align: center;
+	color: var(--text-color);
+	perspective: 1000px;
+	transition: all 0.5s ease;
 }
 
 main .card .inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px 6vh;
-    border-style: outset;
-    background-color: var(--card-color);
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	border-radius: 1vh 6vh;
+	border-style: outset;
+	background-color: var(--card-color);
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
 }
 
-main .card:hover .inner {
-    transform: rotateY(180deg);
-
+main .card .inner.flip {
+	transform: rotateY(180deg);
 }
 
-main .card-front {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-    height: 100%;
-    position: absolute;
-    backface-visibility: hidden;
+main .card-front,
+main .card-back {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 5dvh;
+	height: 100%;
+	position: absolute;
+	backface-visibility: hidden;
 }
 
 main .card-front img {
-    width: 70%;
+	width: 70%;
 }
 
 main .card .roles p {
-    margin: 0px;
-}
-
-main .card-back {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    backface-visibility: hidden;
-    transform: rotateY(180deg);
+	margin: 0px;
 }
 
 main .card-front p {
-    font-weight: 600;
+	font-weight: 400;
 }
 
 main .card-back {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content:space-around;
-    text-align: center;
+	text-align: center;
+    backface-visibility: hidden;
+	transform: rotateY(180deg);
 }
 
 main .card-back img {
-    width: 50%;
+	width: 50%;
 }
 
-main .card-back p {
-    height: 30px;
-    position: relative;
-    top: -50px;
+main .card-back .contacts {
+	display: flex;
+	flex-direction: column;
+	gap: 33px;
+}
+
+main .card-back .contacts a,
+main .card-back .contacts a:active {
+	color: var(--text-color);
+	text-decoration: none;
+	font-weight: 400;
+}
+
+main .card-back .contacts .contact-item {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+main .card-back .contacts .contact-item img {
+	width: 70px;
 }
 
 footer {
-    background-color: var(--alt-background);
-    font-size: 12px;
-    text-align: center;
+	background-color: var(--alt-background);
+	font-size: 1.5dvh;
+	text-align: center;
 }
 
 footer a {
-    color: var(--text-alt-color);
-}
-
-#adviceDiv {
-    padding: 50px 70px 50px 70px;
-    font-size: 20px;
-    font-weight: 300;
+	color: var(--text-alt-color);
 }
 
 /* Responsiveness */
 
-@media(max-width: 768px) {
-    main div p {
+@media (max-width: 768px) {
+	/* main div p {
         font-size: 22px;
-    }
+    } */
 }
 
-@media(max-width: 360px) {
-    header a {
+@media (max-width: 360px) {
+	/* header a {
         padding: 1dvh;
     }
 
     main .card {
         width: 40dvh;
-        height: 60dvh;
+        height: 70dvh;
     }
+
+    main .card-front {
+        gap: 10px;        
+    }
+
+    main .card-front h1 {
+        font-weight: 300;
+        font-size: 47px;
+    }
+
+    main .card-front img {
+        width: 50%;
+    } */
 }
