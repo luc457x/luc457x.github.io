@@ -1,23 +1,38 @@
 import { useState } from 'react'
-import logo from '/logo.png'
+import './reset.css'
+import './variables.css'
 import './App.css'
+import Card from './Card.tsx'
+import Portfolio from './Portfolio.tsx'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [state, setState] = useState(false)
 
   return (
     <>
-      <div>
-        <h1 className='header'>Lucas7x's Portfolio</h1>
-        <a href="https://lucas7x.win" target="_blank">
-          <img src={logo} className="logo" alt="lucas7x logo" />
-        </a>
-      </div>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-      </div>
+      <header>
+        {state == false && (
+          <a href="#" onClick={() => setState(true)} >Portfolio</a>
+        )}
+        {state == true && (
+          <a href="#" onClick={() => setState(false)} >Home</a>
+        )}
+        <a href="https://www.linkedin.com/in/lucas-de-paula-teixeira-24148a177/" target="_blank">LinkedIn</a>
+        <a href="https://linktr.ee/lucas7x" target="_blank">Linktree</a>
+      </header>
+      <main>
+        {state == false && (
+          <Card />
+        )}
+        {state == true && (
+          <Portfolio />
+        )}
+      </main>
+      <footer>
+        <div>
+          &copy; 2024 : <a href="https://lucas7x.win" target="_blank">Luc45</a>
+        </div>
+      </footer>
     </>
   )
 }
