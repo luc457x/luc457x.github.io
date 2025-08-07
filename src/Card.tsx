@@ -2,7 +2,6 @@ import { useState } from 'react';
 
 function Card() {
     const [Flipped, setFlipped] = useState(false);
-
     const handleFlip = () => {
         setFlipped(!Flipped);
     };
