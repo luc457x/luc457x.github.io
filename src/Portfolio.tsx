@@ -5,11 +5,6 @@ function Portfolio() {
     const handleFlip = () => {
         setFlipped(!Flipped);
     };
-    const [Project, setProject] = useState(0)
-    const handleProject = () => {
-        setProject
-    }
-
     return (
         <>
             <div className="card">
