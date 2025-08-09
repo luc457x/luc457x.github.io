@@ -43,7 +43,7 @@ header a {
 	height: 2.2dvw;
 	background-color: #5a636d31;
 	text-decoration: none;
-	border-radius: 5px;
+	border-radius: 0.3dvh;
 }
 
 header a:hover {
@@ -65,7 +65,17 @@ main .card {
 	text-align: center;
 	color: var(--text-color);
 	perspective: 1500px;
-	transition: all 0.5s ease;
+	transition: width 0.25s;
+	border-radius: 1vh 6vh;
+}
+
+main .card.large {
+	width: 70dvw;
+}
+
+main .card .inner:hover,
+main .card .inner.flip:hover{
+	box-shadow: 0px 3px 5px rgba(185, 174, 174, 0.5);
 }
 
 main .card .inner {
@@ -98,7 +108,7 @@ main .card-back {
 
 
 main .card-front img {
-	width: 70%;
+	height: 30%;
 }
 
 main .card .roles p {
@@ -140,6 +150,15 @@ main .card-back .contacts .contact-item {
 
 main .card-back .contacts .contact-item img {
 	width: 4dvh;
+}
+
+main .card-transition {
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+main .card-transition.flip {
+  transform: rotateY(180deg);
 }
 
 button {
