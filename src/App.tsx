@@ -18,13 +18,13 @@ function App() {
     <>
       <header>
         {state == false && (
-          <a href="#" onClick={handleState} >Portfolio</a>
+          <a href='#' onClick={handleState} >Portfolio</a>
         )}
         {state == true && (
-          <a href="#" onClick={handleState} >Home</a>
+          <a href='#' onClick={handleState} >Home</a>
         )}
-        <a href="https://www.linkedin.com/in/lucas-de-paula-teixeira-24148a177/" target="_blank">LinkedIn</a>
-        <a href="https://linktr.ee/lucas7x" target="_blank">Linktree</a>
+        <a href='https://www.linkedin.com/in/lucas-de-paula-teixeira-24148a177/' target='_blank'>LinkedIn</a>
+        <a href='https://linktr.ee/lucas7x' target='_blank'>Linktree</a>
       </header>
       <main>
         <Card
@@ -35,7 +35,7 @@ function App() {
       </main>
       <footer>
         <div>
-          &#x1F12F; 2024 : <a href="https://lucas7x.win" target="_blank">Luc45</a>
+          &#x1F12F; 2024 : <a href='https://lucas7x.win' target='_blank'>Luc45</a>
         </div>
       </footer>
     </>

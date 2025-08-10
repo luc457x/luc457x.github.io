@@ -65,7 +65,7 @@ main .card {
 	text-align: center;
 	color: var(--text-color);
 	perspective: 1500px;
-	transition: width 0.25s;
+	transition: width 0.75s;
 	border-radius: 1vh 6vh;
 }
 
@@ -106,13 +106,43 @@ main .card-back {
 	backface-visibility: hidden;
 }
 
+main .card .roles p {
+	margin: 0px;
+}
+
+main .card .portfolio {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	padding: 2dvh 2dvw;
+}
+
+main .card .portfolio .moreless {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 1dvh;
+}
+
+main .card .portfolio .project {
+	flex: 0 0 calc(33.333% - 2dvh)
+}
+
+main .card .portfolio .more {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 1dvh;
+}
 
 main .card-front img {
 	height: 30%;
-}
-
-main .card .roles p {
-	margin: 0px;
 }
 
 main .card-front p {
